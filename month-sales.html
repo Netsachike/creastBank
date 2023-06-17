@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creasebank - MONTH SALES</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER 👇🏽 -->
+    <nav class="app-navbar">
+      <a class="logo" href="index.html">
+        <img src="images/logo 1.png" alt="" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a class="nav-link sign-up" href="#">Sign Up</a></li>
+        <li><a class="nav-link sign-in" href="#">Sign In</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section class="app-inner">
+        <div class="steps">
+          <div class="step active">
+            <p>1. Basic Info</p>
+          </div>
+          <div class="step active">
+            <p>2. Owner Info</p>
+          </div>
+          <div class="step">
+            <p>3. Business Info</p>
+          </div>
+          <div class="step">
+            <p>4. Submit</p>
+          </div>
+        </div>
+
+        <div class="container-white">
+          <div>
+            <header class="container-header">
+              <h1>Tell us about yourself</h1>
+              <p>
+                Lets start with some basic questions so we can find you the best
+                loan options.
+              </p>
+            </header>
+
+            <form class="info-form">
+              <header>Average month sales</header>
+              <div class="month-btns">
+                <button class="month-btn" type="button">$0k</button>
+                <button class="month-btn" type="button">$1k - 4k</button>
+                <button class="month-btn" type="button">$5k - 7k</button>
+                <button class="month-btn" type="button">$8k - 14k</button>
+                <button class="month-btn" type="button">$15k - 19k</button>
+                <button class="month-btn" type="button">$20k - 49k</button>
+                <button class="month-btn" type="button">$50k - 79k</button>
+                <button class="month-btn" type="button">$80k - 199k</button>
+                <button class="month-btn" type="button">$200k</button>
+              </div>
+
+              <div class="submit-btns">
+                <button>I havent Started Yet</button>
+                <button type="submit">Next</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        Copyright &copy; 2022 Lendio. All Rights Reserved, I 4100 Chapel Ridge
+        Road<!--
+        Suite 500, Lehi, UT 84043 855-853-6346 California loans made pursuant to
+        the California Financing Law, Division 9 (commencing with Section 22000)
+        of the Finance Code. All such loans made through Lendio Partners, LLC, a
+        wholly-owned subsidiary of Lendio, Inc. and a licensed finance
+        lender/broker, California Financing Law License No. 60DBO-44694 -->
+      </footer>
+    </main>
+
+    <script>
+      let inp = document.querySelector("input");
+
+      inp.addEventListener("change", () => {
+        alert(inp.value);
+      });
+    </script>
+  </body>
+</html>

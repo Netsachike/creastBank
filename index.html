@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creasebank - HOME</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER 👇🏽 -->
+    <nav class="app-navbar">
+      <a class="logo" href="index.html">
+        <img src="images/logo 1.png" alt="" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a class="nav-link sign-up" href="#">Sign Up</a></li>
+        <li><a class="nav-link sign-in" href="#">Sign In</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section class="app-inner">
+        <div class="steps">
+          <div class="step active">
+            <p>1. Basic Info</p>
+          </div>
+          <div class="step">
+            <p>2. Owner Info</p>
+          </div>
+          <div class="step">
+            <p>3. Business Info</p>
+          </div>
+          <div class="step">
+            <p>4. Submit</p>
+          </div>
+        </div>
+
+        <div class="container-white">
+          <div>
+            <header class="container-header">
+              <h1>Tell us about yourself</h1>
+              <p>
+                Lets start with some basic questions so we can find you the best
+                loan options.
+              </p>
+            </header>
+
+            <form class="info-form">
+              <header>Business start date</header>
+              <div class="info-form-group">
+                <div class="input-div">
+                  <label for="">Month</label>
+                  <div class="relative">
+                    <input type="date" name="" id="" value="2023-06-17" />
+                    <svg
+                      class="chevron-down"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      width="24px"
+                      fill="#000000"
+                    >
+                      <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-div">
+                  <label for="">Year</label>
+                  <div class="relative">
+                    <input type="date" name="" id="" value="2023-06-17" />
+                    <svg
+                      class="chevron-down"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      width="24px"
+                      fill="#000000"
+                    >
+                      <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="submit-btns">
+                <button>I havent Started Yet</button>
+                <button type="submit">Next</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        Copyright &copy; 2022 Lendio. All Rights Reserved, I 4100 Chapel Ridge
+        Road<!--
+        Suite 500, Lehi, UT 84043 855-853-6346 California loans made pursuant to
+        the California Financing Law, Division 9 (commencing with Section 22000)
+        of the Finance Code. All such loans made through Lendio Partners, LLC, a
+        wholly-owned subsidiary of Lendio, Inc. and a licensed finance
+        lender/broker, California Financing Law License No. 60DBO-44694 -->
+      </footer>
+    </main>
+
+    <script>
+      let inp = document.querySelector("input");
+
+      inp.addEventListener("change", () => {
+        alert(inp.value);
+      });
+    </script>
+  </body>
+</html>
